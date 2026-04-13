@@ -24,6 +24,7 @@ const { findPackageJSON } = require("module");
 
 const dns = require("dns");
 const dbUrl = process.env.ATLASDB_URL;
+mongoose.set('strictQuery', false);
 
 dns.setServers(["1.1.1.1" , "8.8.8.8"]);
 
@@ -36,7 +37,10 @@ main()
   });
 
 async function main() {
-    await mongoose.connect(dbUrl);   
+    await mongoose.connect(dbUrl, {
+        serverSelectionTimeoutMS: 30000,
+        socketTimeoutMS: 45000,
+    });   
 }
 
 app.set("view engine" , "ejs");
