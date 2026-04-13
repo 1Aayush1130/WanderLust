@@ -2,10 +2,17 @@
 
 <style>
     #filters {
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center;
-    }
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    overflow-x: auto;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+#filters::-webkit-scrollbar {
+    display: none;
+}
 
     .filter {
         text-align: center;
