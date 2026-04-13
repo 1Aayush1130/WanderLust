@@ -40,8 +40,9 @@ async function main() {
     await mongoose.connect(dbUrl, {
         serverSelectionTimeoutMS: 30000,
         socketTimeoutMS: 45000,
+        family: 4,
     });   
-}
+};
 
 app.set("view engine" , "ejs");
 app.set("views" , path.join(__dirname , "views"));
