@@ -122,3 +122,13 @@ body {
     height: 400px;
     width: 80vh;
 }
+
+@media (max-width: 768px) {
+  .navbar-brand {
+    font-size: 1.2rem;
+  }
+  .offcanvas {
+    width: 75% !important;
+    max-width: 300px !important;
+  }
+}
