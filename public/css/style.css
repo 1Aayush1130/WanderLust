@@ -136,3 +136,25 @@ body {
         height: 300px !important;
     }
 }
+
+/* Social Icons Responsive */
+.f-info-socials {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: clamp(10px, 3vw, 24px);
+  flex-wrap: wrap;
+}
+
+.f-info-socials a {
+  color: inherit;
+  text-decoration: none;
+  font-size: clamp(20px, 5vw, 28px);
+  transition: transform 0.2s, color 0.2s;
+  display: inline-flex;
+}
+
+.f-info-socials a:hover {
+  transform: scale(1.2);
+  color: #222;
+}
