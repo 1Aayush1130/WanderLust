@@ -129,6 +129,8 @@ Then open your browser and visit: **`http://localhost:8080`**
 
 App is live at: https://wanderlust-qm10.onrender.com
 
+---
+
 ## 🤝 Contributing
 
 Contributions are welcome! Feel free to open an issue or submit a pull request.
